@@ -1,0 +1,21 @@
+@media (min-width: 720px) {
+  body > main {
+    width: 70%;
+  }
+
+  body > main > article > footer {
+    flex-direction: row;
+  }
+
+  body > main > article > footer > img {
+    margin-right: 16px;
+  }
+
+  #footer-container {
+    flex-direction: row;
+  }
+
+  #footer-container > section {
+    margin-right: 32px;
+  }
+}

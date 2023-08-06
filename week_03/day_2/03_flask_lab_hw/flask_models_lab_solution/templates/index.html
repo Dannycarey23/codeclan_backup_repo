@@ -1,0 +1,30 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  <title>{{ title }} - Orders</title>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li class="navLink"><a href="/orders">Home</a></li>
+    </ul>
+  </nav>
+  <hr>
+  <h1>All Orders!</h1>
+
+  <div class="order-container">
+    {% for order in orders %}
+    <div class="order">
+      <h2>{{ order.name }}</h2>
+      <h3>{{ order.topping }}</h3>
+      <h4>When: {{ order.date.strftime("%b %d %Y") }}</h4>
+      <h5>Quantity: {{ order.quantity }}</h5>
+      <a href="/orders/{{orders.index(order)}}">Show Order</a>
+    </div>
+    {% endfor %}
+  </div>
+</body>
+
+</html>

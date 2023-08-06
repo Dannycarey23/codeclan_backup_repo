@@ -1,0 +1,46 @@
+.white-text {
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+body>header {
+    padding: 1rem;
+    background: dodgerblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header>nav>ul {
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+body>main {
+    margin: 3rem;
+}
+
+#author {
+    padding: 1rem;
+    border: 2px dashed #eee;
+    display: flex;
+    gap: 1rem;
+}
+
+#author>img {
+    border-radius: 100%;
+}
+
+body>footer {
+    padding: 1rem;
+    background: dodgerblue;
+}
+
+#footer-container {
+    display: flex;
+    gap: 2rem;
+}

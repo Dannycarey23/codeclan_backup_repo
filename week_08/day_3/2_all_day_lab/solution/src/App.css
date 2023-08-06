@@ -1,0 +1,38 @@
+.App {
+  text-align: center;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+  margin-bottom: 0;
+}
+
+body > div >  header  a {
+  color: skyblue;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+
+ul{
+  list-style-type: none;
+}
+
+
+button:hover {
+  background-color: grey; 
+  color: white;
+}
+
+li > span > img {
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+
+#user-info{
+  padding-right: 30px;
+}

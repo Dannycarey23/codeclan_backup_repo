@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+}
+
+header {
+  padding: 16px;
+  background-color: lightblue;
+  color: #fff;
+  text-align: center;
+}
+
+#menu {
+  padding: 32px;
+  background-color: #eee;
+}
+
+nav {
+  margin-top: 19.92px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+#main-content {
+  padding: 32px;
+}
+
+footer {
+  padding: 16px;
+  background-color: lightblue;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+
+#grid-container {
+
+}

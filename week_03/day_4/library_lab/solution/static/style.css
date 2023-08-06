@@ -1,0 +1,79 @@
+body {
+    font-family: sans-serif;
+    background: #eee;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+header {
+    padding: 1rem;
+    background: dodgerblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+header>h1 {
+    margin: 0;
+    color: white;
+}
+
+header>nav>ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav>ul>li>a {
+    color: white;
+}
+
+main {
+    margin: auto;
+}
+
+main>section {
+    margin: 1rem 0;
+    padding: 1rem;
+    background: white;
+    border: 2px dashed dodgerblue;
+    border-radius: 1rem;
+}
+
+#book-list {
+    padding: 0;
+    list-style: none;
+}
+
+hr {
+    border-top: 2px dashed dodgerblue;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form>label {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+}
+
+footer {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    background: dodgerblue;
+    color: white;
+}
+
+strong {
+    font-weight: bold;
+}

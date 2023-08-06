@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Visits</h1>
+
+<p class="btn--wrapper">
+  <a class="btn btn--action" href="/visits/new">New visit</a>
+</p>
+
+<ul>
+  {% for visit in visits %}
+  <li>
+  <p>{{ visit.user.name }} - {{ visit.location.name }} </p>
+  <p>"<i>{{visit.review}}</i>"</p>
+    <p>
+      <form action="/visits/{{ visit.id }}/delete" method="POST">
+        <input class="btn btn--danger" type="submit" value="delete" />
+      </form>
+    </p>
+  </li>
+  {% endfor %}
+</ul>
+
+
+{% endblock %}

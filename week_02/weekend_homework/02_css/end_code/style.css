@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif
+}
+
+body > header {
+  background-color: dodgerblue;
+  color: white;
+}
+
+#logo {
+  margin: 0;
+  font-family: "Fredoka One", sans-serif;
+}
+
+nav > ul {
+  list-style: none;
+}
+
+nav > ul > li > a {
+  color: white;
+}
+
+body > main > article {
+  margin: auto;
+  width: 70%;
+}
+
+body > footer {
+  background-color: dodgerblue;
+}
+
+body > footer > p {
+  padding: 16px;
+  text-align: center;
+  color: white;
+}
+
+.like-button {
+  background-color: transparent;
+  border: 1px solid dodgerblue;
+}
+
+.share-button {
+  background-color: transparent;
+  border: 1px solid green;
+}

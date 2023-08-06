@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Add a Visit</h1>
+
+<form action="/visits" method="post">
+  <label for="user">Select a user:</label>
+    <select name="user_id" id="user">
+      {% for user in users %}
+      <option value="{{ user.id }}">{{ user.name }}</option>
+      {% endfor %}
+    </select>
+  
+  <label for="location">Select a location:</label>
+    <select name="location_id" id="location">
+      {% for location in locations %}
+      <option value="{{ location.id }}">{{ location.name }}</option>
+      {% endfor %}
+    </select>
+  
+
+  <label for="review">Add a Review</label>
+  <textarea name="review" id="review" cols="30" rows="10"></textarea>
+  <input class="btn btn--action" type='submit' value="Visit">
+</form>
+
+{% endblock %}

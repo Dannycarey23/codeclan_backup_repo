@@ -1,0 +1,36 @@
+.white-text {
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+body>header {
+    padding: 1rem;
+    background: dodgerblue;
+}
+
+header>nav>ul {
+    padding: 0;
+}
+
+body>main {
+    margin: 3rem;
+}
+
+#author {
+    padding: 1rem;
+    border: 2px dashed #eee;
+}
+
+#author>img {
+    border-radius: 100%;
+}
+
+body>footer {
+    padding: 1rem;
+    background: dodgerblue;
+}
+
+#footer-container {}

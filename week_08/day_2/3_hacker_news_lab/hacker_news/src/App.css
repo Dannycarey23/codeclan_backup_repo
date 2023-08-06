@@ -1,0 +1,43 @@
+body {
+	background: #fff;
+}
+
+#root {
+	background: #f6f6ef;
+	width: 75%;
+	margin: 0 auto;
+	padding: 10px 0;
+}
+
+h1 {
+	margin: 0;
+}
+
+p {
+	margin-top: 0;
+}
+
+ul {
+	list-style-type: none;
+}
+
+form input {
+	width: 90%;
+	margin: 0 auto;
+	padding: 10px;
+	display: block;
+}
+
+form input:focus {
+	outline: 1px solid #ff6600;
+}
+
+a, a:link, a:visited {
+	font-size: 16px;
+	color: #000;
+	text-decoration: none;
+}
+
+a:hover, a:active, a:focus {
+
+}

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>{{ title }}</h1>
+
+    <form action="/tasks" method="post">
+      <label for="title">Title</label>
+      <input type="text" name="title" id="title">
+      <label for="description">Description</label>
+      <textarea name="description" id="description" rows="2" cols="30"></textarea>
+      <input type="submit" value="Add Task">
+    </form> <!-- ADDED -->
+
+    {% for task in tasks %}
+    <div>
+      {{ task.title }}: <b>{{ task.description }}</b>
+          {% if task.done %}
+          <span> &#9989;</span>
+          {% endif %}
+    </div>
+    {% endfor %}
+{% endblock %}
